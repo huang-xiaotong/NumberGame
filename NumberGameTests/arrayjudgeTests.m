@@ -20,7 +20,7 @@
 - (void)setUp
 {
     NSMutableArray *systemarray = [[NSMutableArray alloc]initWithObjects:@"1",@"2",@"3",@"4", nil];
-    NSMutableArray *writearray = [[NSMutableArray alloc]initWithObjects:@"4",@"5",@"3",@"7", nil];
+    NSMutableArray *writearray = [[NSMutableArray alloc]initWithObjects:@"1",@"5",@"3",@"4", nil];
     a = 0;
     b = 0;
     c = 0;
@@ -50,9 +50,9 @@
 - (void)testExample
 {
     NSLog(@"%dA%dB",a,b);
-    XCTAssertEqual(a, 1, @"a is true");
-    XCTAssertEqual(b, 1, @"b is true");
-    XCTAssertEqual(c, 2, @"c is true");
+    XCTAssertEqual(a, 3, @"a is true");
+    XCTAssertEqual(b, 0, @"b is true");
+    XCTAssertEqual(c, 3, @"c is true");
 }
 
 @end

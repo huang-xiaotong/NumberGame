@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+<UITextFieldDelegate>
+{
+    UITextField *writeText;
+    UITextField *showText;
+    NSMutableArray *systemarray;
+    NSMutableArray *writearray;
+}
+@property int a;
+@property int b;
+@property int c;
+@property int n;
 @end
