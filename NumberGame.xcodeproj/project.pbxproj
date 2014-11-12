@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A4B81DF1A11B7FF004210A2 /* editTextfieldNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B81DE1A11B7FF004210A2 /* editTextfieldNumberTests.m */; };
 		9A5BA0D31A10990D00785778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5BA0D21A10990D00785778 /* Foundation.framework */; };
 		9A5BA0D51A10990D00785778 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5BA0D41A10990D00785778 /* CoreGraphics.framework */; };
 		9A5BA0D71A10990D00785778 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5BA0D61A10990D00785778 /* UIKit.framework */; };
@@ -22,8 +21,10 @@
 		9A5BA0F41A10990E00785778 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5BA0D61A10990D00785778 /* UIKit.framework */; };
 		9A5BA0FC1A10990E00785778 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A5BA0FA1A10990E00785778 /* InfoPlist.strings */; };
 		9A5BA0FE1A10990E00785778 /* NumberGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BA0FD1A10990E00785778 /* NumberGameTests.m */; };
-		9A5BA1101A10A2AA00785778 /* DifferentNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BA10F1A10A2AA00785778 /* DifferentNumberTests.m */; };
-		9A5BA1181A10B4DB00785778 /* arrayjudgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BA1171A10B4DA00785778 /* arrayjudgeTests.m */; };
+		9A5BA1181A10B4DB00785778 /* judgeResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BA1171A10B4DA00785778 /* judgeResultTests.m */; };
+		9AA6C6771A130C2E00B74084 /* GameRuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6C6761A130C2E00B74084 /* GameRuleViewController.m */; };
+		9AA6C67B1A131F1500B74084 /* AsJudgeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6C67A1A131F1500B74084 /* AsJudgeResult.m */; };
+		9AA6C67E1A1320DA00B74084 /* AsGenerateRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6C67D1A1320DA00B74084 /* AsGenerateRandom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9A4B81DE1A11B7FF004210A2 /* editTextfieldNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = editTextfieldNumberTests.m; sourceTree = "<group>"; };
 		9A5BA0CF1A10990D00785778 /* NumberGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5BA0D21A10990D00785778 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A5BA0D41A10990D00785778 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +57,13 @@
 		9A5BA0F91A10990E00785778 /* NumberGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NumberGameTests-Info.plist"; sourceTree = "<group>"; };
 		9A5BA0FB1A10990E00785778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A5BA0FD1A10990E00785778 /* NumberGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberGameTests.m; sourceTree = "<group>"; };
-		9A5BA10F1A10A2AA00785778 /* DifferentNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifferentNumberTests.m; sourceTree = "<group>"; };
-		9A5BA1171A10B4DA00785778 /* arrayjudgeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayjudgeTests.m; sourceTree = "<group>"; };
+		9A5BA1171A10B4DA00785778 /* judgeResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = judgeResultTests.m; sourceTree = "<group>"; };
+		9AA6C6751A130C2E00B74084 /* GameRuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRuleViewController.h; sourceTree = "<group>"; };
+		9AA6C6761A130C2E00B74084 /* GameRuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRuleViewController.m; sourceTree = "<group>"; };
+		9AA6C6791A131F1500B74084 /* AsJudgeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsJudgeResult.h; sourceTree = "<group>"; };
+		9AA6C67A1A131F1500B74084 /* AsJudgeResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsJudgeResult.m; sourceTree = "<group>"; };
+		9AA6C67C1A1320DA00B74084 /* AsGenerateRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsGenerateRandom.h; sourceTree = "<group>"; };
+		9AA6C67D1A1320DA00B74084 /* AsGenerateRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsGenerateRandom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A4573E71A13910800E06B3A /* appDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9A5BA0E11A10990D00785778 /* AppDelegate.h */,
+				9A5BA0E21A10990D00785778 /* AppDelegate.m */,
+			);
+			name = appDelegate;
+			sourceTree = "<group>";
+		};
+		9A4573E81A13914E00E06B3A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A5BA0E71A10990E00785778 /* ViewController.h */,
+				9A5BA0E81A10990E00785778 /* ViewController.m */,
+				9AA6C6751A130C2E00B74084 /* GameRuleViewController.h */,
+				9AA6C6761A130C2E00B74084 /* GameRuleViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		9A5BA0C61A10990D00785778 = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +143,10 @@
 		9A5BA0D81A10990D00785778 /* NumberGame */ = {
 			isa = PBXGroup;
 			children = (
-				9A5BA0E11A10990D00785778 /* AppDelegate.h */,
-				9A5BA0E21A10990D00785778 /* AppDelegate.m */,
+				9A4573E71A13910800E06B3A /* appDelegate */,
+				9A4573E81A13914E00E06B3A /* ViewController */,
+				9AA6C6781A131EAC00B74084 /* New Group */,
 				9A5BA0E41A10990E00785778 /* Main.storyboard */,
-				9A5BA0E71A10990E00785778 /* ViewController.h */,
-				9A5BA0E81A10990E00785778 /* ViewController.m */,
 				9A5BA0EA1A10990E00785778 /* Images.xcassets */,
 				9A5BA0D91A10990D00785778 /* Supporting Files */,
 			);
@@ -144,9 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				9A5BA0FD1A10990E00785778 /* NumberGameTests.m */,
-				9A5BA10F1A10A2AA00785778 /* DifferentNumberTests.m */,
-				9A5BA1171A10B4DA00785778 /* arrayjudgeTests.m */,
-				9A4B81DE1A11B7FF004210A2 /* editTextfieldNumberTests.m */,
+				9A5BA1171A10B4DA00785778 /* judgeResultTests.m */,
 				9A5BA0F81A10990E00785778 /* Supporting Files */,
 			);
 			path = NumberGameTests;
@@ -159,6 +181,17 @@
 				9A5BA0FA1A10990E00785778 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AA6C6781A131EAC00B74084 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6C6791A131F1500B74084 /* AsJudgeResult.h */,
+				9AA6C67A1A131F1500B74084 /* AsJudgeResult.m */,
+				9AA6C67C1A1320DA00B74084 /* AsGenerateRandom.h */,
+				9AA6C67D1A1320DA00B74084 /* AsGenerateRandom.m */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA6C67B1A131F1500B74084 /* AsJudgeResult.m in Sources */,
+				9AA6C67E1A1320DA00B74084 /* AsGenerateRandom.m in Sources */,
+				9AA6C6771A130C2E00B74084 /* GameRuleViewController.m in Sources */,
 				9A5BA0E91A10990E00785778 /* ViewController.m in Sources */,
 				9A5BA0E31A10990D00785778 /* AppDelegate.m in Sources */,
 				9A5BA0DF1A10990D00785778 /* main.m in Sources */,
@@ -268,10 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4B81DF1A11B7FF004210A2 /* editTextfieldNumberTests.m in Sources */,
-				9A5BA1101A10A2AA00785778 /* DifferentNumberTests.m in Sources */,
 				9A5BA0FE1A10990E00785778 /* NumberGameTests.m in Sources */,
-				9A5BA1181A10B4DB00785778 /* arrayjudgeTests.m in Sources */,
+				9A5BA1181A10B4DB00785778 /* judgeResultTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

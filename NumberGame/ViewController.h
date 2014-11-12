@@ -15,9 +15,10 @@
     UITextField *showText;
     NSMutableArray *systemarray;
     NSMutableArray *writearray;
+    NSString *randomNumber;
 }
-@property int a;
-@property int b;
-@property int c;
-@property int n;
+@property int sameNumberSamePosition;
+@property int sameNumberDifferentPosition;
+@property int sameNumber;
+@property int inputCount;
 @end
