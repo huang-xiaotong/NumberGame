@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface AsGenerateRandom : NSObject
--(NSString *)randomNumber :(int)i;
+-(NSString *)randomNumber :(int)randomNumberMax;
 @end

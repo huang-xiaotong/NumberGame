@@ -7,18 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface ViewController : UIViewController
 <UITextFieldDelegate>
 {
     UITextField *writeText;
     UITextField *showText;
-    NSMutableArray *systemarray;
-    NSMutableArray *writearray;
     NSString *randomNumber;
 }
-@property int sameNumberSamePosition;
-@property int sameNumberDifferentPosition;
-@property int sameNumber;
 @property int inputCount;
 @end

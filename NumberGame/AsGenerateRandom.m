@@ -9,48 +9,28 @@
 #import "AsGenerateRandom.h"
 
 @implementation AsGenerateRandom
--(NSString *)randomNumber :(int)i
+-(NSString *)randomNumber :(int)randomNumberMax
 {
     NSMutableString *randomnumber = [[NSMutableString alloc]init];
-    do{
-        int random = arc4random()%i;
-        NSString *randomString = [NSString stringWithFormat:@"%d",random];
-        for (int scan = 0; scan < randomnumber.length; scan++) {
-            if ([randomnumber substringWithRange:NSMakeRange(scan, 1)] != randomString) {
-                [randomnumber insertString:randomString atIndex:[randomnumber length]];
-            }
-        }
-//        [randomnumber insertString:randomString atIndex:[randomnumber length]];
-//        for (int m = 0; m<randomnumber.length; m++ ) {
-//            for (int n = m + 1; n < randomnumber.length; n++) {
-//                if ([randomnumber substringWithRange:NSMakeRange(m, 1)] == [randomnumber substringWithRange:NSMakeRange(n, 1)]) {
-//                    [randomnumber deleteCharactersInRange:NSMakeRange(m, 1)];
-//                }
-//        }
-//    }
-    }while (randomnumber.length != 4);
-//    NSArray *randomarray = [self creatArray:10];
-//    for (int index = 0; index < [randomarray count]; index ++) {
-//        NSString *randomString = [NSString stringWithFormat:@"%@",randomarray[index]];
-//        [randomnumber insertString:randomString atIndex:[randomnumber];
-//    }
-    
+    NSArray *randomarray = [self creatRandomArray:randomNumberMax];
+    for (int index = 0; index < [randomarray count]; index ++) {
+        NSString *randomString = [NSString stringWithFormat:@"%@",randomarray[index]];
+        [randomnumber insertString:randomString atIndex:[randomnumber length]];
+   }
+   
 return randomnumber;
 }
--(NSMutableArray *)creatArray :(int)i
+-(NSMutableArray *)creatRandomArray :(int)randomMax
 {
-    NSMutableArray *array = [[NSMutableArray alloc]init];
+    NSMutableArray *randomArray = [[NSMutableArray alloc]init];
     do {
-        int random = arc4random()%i;
-
+        int random = arc4random()%randomMax;
         NSString *randomString = [NSString stringWithFormat:@"%d",random];
-
-        if (![array containsObject:randomString]) {
-            [array addObject:randomString];
+        if (![randomArray containsObject:randomString]) {
+            [randomArray addObject:randomString];
         }
-    }
-    while (array.count != 4);
-    return array;
+    }while (randomArray.count != 4);
+    return randomArray;
 }
 
 @end

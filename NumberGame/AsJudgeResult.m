@@ -23,16 +23,14 @@
     int sameNumberSamePosition = 0;
     int sameNumberDifferentPosition = 0;
     int sameNumber = 0;
-    NSString *writedata = getWriteString;
     NSMutableArray *writearray = [[NSMutableArray alloc]init];
-    for (int m = 0; m<[writedata length]; m++) {
-        NSString *data = [writedata substringWithRange:NSMakeRange(m, 1)];
+    for (int writeIndex = 0; writeIndex<[getWriteString length]; writeIndex++) {
+        NSString *data = [getWriteString substringWithRange:NSMakeRange(writeIndex, 1)];
         [writearray addObject:data];
     }
-    NSString *randomdata = getRandomString;
     NSMutableArray *getRandomArray = [[NSMutableArray alloc]init];
-    for (int m = 0; m<[writedata length]; m++) {
-        NSString *data = [randomdata substringWithRange:NSMakeRange(m, 1)];
+    for (int randomIndex = 0; randomIndex<[getRandomString length]; randomIndex++) {
+        NSString *data = [getRandomString substringWithRange:NSMakeRange(randomIndex, 1)];
         [getRandomArray addObject:data];
     }
     for (int i = 0; i<[writearray count]; i++) {

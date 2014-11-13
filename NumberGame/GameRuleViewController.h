@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface GameRuleViewController : UIViewController
-
+<UITextViewDelegate>
+{
+    UITextView *ruleText;
+}
 @end

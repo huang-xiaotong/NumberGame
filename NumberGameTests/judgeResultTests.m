@@ -30,5 +30,40 @@
     NSString *judgeResult = [judge judgeResultOut];
     XCTAssertEqualObjects(judgeResult, @"0A4B");
 }
-
+- (void)test_judge_result_is_0A0B
+{
+    AsJudgeResult* judge = [[AsJudgeResult alloc]init:@"1234" :@"5678"];
+    NSString *judgeResult = [judge judgeResultOut];
+    XCTAssertEqualObjects(judgeResult, @"0A0B");
+}
+- (void)test_judge_result_is_2A0B
+{
+    AsJudgeResult* judge = [[AsJudgeResult alloc]init:@"1234" :@"1256"];
+    NSString *judgeResult = [judge judgeResultOut];
+    XCTAssertEqualObjects(judgeResult, @"2A0B");
+}
+- (void)test_judge_result_is_2A2B
+{
+    AsJudgeResult* judge = [[AsJudgeResult alloc]init:@"1234" :@"2134"];
+    NSString *judgeResult = [judge judgeResultOut];
+    XCTAssertEqualObjects(judgeResult, @"2A2B");
+}
+- (void)test_judge_result_is_0A2B
+{
+    AsJudgeResult* judge = [[AsJudgeResult alloc]init:@"1234" :@"5643"];
+    NSString *judgeResult = [judge judgeResultOut];
+    XCTAssertEqualObjects(judgeResult, @"0A2B");
+}
+- (void)test_judge_result_is_0A3B
+{
+    AsJudgeResult* judge = [[AsJudgeResult alloc]init:@"1234" :@"4521"];
+    NSString *judgeResult = [judge judgeResultOut];
+    XCTAssertEqualObjects(judgeResult, @"0A3B");
+}
+- (void)test_judge_result_is_4A0B
+{
+    AsJudgeResult* judge = [[AsJudgeResult alloc]init:@"1234" :@"1234"];
+    NSString *judgeResult = [judge judgeResultOut];
+    XCTAssertEqualObjects(judgeResult, @"4A0B");
+}
 @end

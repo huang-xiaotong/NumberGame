@@ -25,6 +25,15 @@
 
 - (void)viewDidLoad
 {
+    self.title = @"游戏规则";
+    self.view.backgroundColor = [UIColor whiteColor];
+    ruleText = [[UITextView alloc]initWithFrame:CGRectMake(90, 90, 140, 100)];
+//    ruleText.backgroundColor = [UIColor blueColor];
+    ruleText.contentInset = UIEdgeInsetsMake(-11, -6, 0, 0);
+    
+    ruleText.text = @"alkfnvraioianvlrk/n aslkjfdlka/n nvlfjnvl";
+    ruleText.delegate = self;
+    [self.view addSubview:ruleText];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -34,7 +43,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    //隐藏键盘
+    [ruleText resignFirstResponder];
+}
 /*
 #pragma mark - Navigation
 

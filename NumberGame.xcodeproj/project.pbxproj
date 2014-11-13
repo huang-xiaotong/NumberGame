@@ -20,8 +20,10 @@
 		9A5BA0F31A10990E00785778 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5BA0D21A10990D00785778 /* Foundation.framework */; };
 		9A5BA0F41A10990E00785778 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5BA0D61A10990D00785778 /* UIKit.framework */; };
 		9A5BA0FC1A10990E00785778 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A5BA0FA1A10990E00785778 /* InfoPlist.strings */; };
-		9A5BA0FE1A10990E00785778 /* NumberGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BA0FD1A10990E00785778 /* NumberGameTests.m */; };
+		9A5BA0FE1A10990E00785778 /* judgeRandomNotNilAndDifferentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BA0FD1A10990E00785778 /* judgeRandomNotNilAndDifferentTests.m */; };
 		9A5BA1181A10B4DB00785778 /* judgeResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5BA1171A10B4DA00785778 /* judgeResultTests.m */; };
+		9A66A16E1A149FD9008CB31D /* AsJudgeCountAndExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A16D1A149FD9008CB31D /* AsJudgeCountAndExport.m */; };
+		9A66A1701A14AD4C008CB31D /* judgeCountShowResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A16F1A14AD4B008CB31D /* judgeCountShowResult.m */; };
 		9AA6C6771A130C2E00B74084 /* GameRuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6C6761A130C2E00B74084 /* GameRuleViewController.m */; };
 		9AA6C67B1A131F1500B74084 /* AsJudgeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6C67A1A131F1500B74084 /* AsJudgeResult.m */; };
 		9AA6C67E1A1320DA00B74084 /* AsGenerateRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6C67D1A1320DA00B74084 /* AsGenerateRandom.m */; };
@@ -56,8 +58,11 @@
 		9A5BA0F11A10990E00785778 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9A5BA0F91A10990E00785778 /* NumberGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NumberGameTests-Info.plist"; sourceTree = "<group>"; };
 		9A5BA0FB1A10990E00785778 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9A5BA0FD1A10990E00785778 /* NumberGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberGameTests.m; sourceTree = "<group>"; };
+		9A5BA0FD1A10990E00785778 /* judgeRandomNotNilAndDifferentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = judgeRandomNotNilAndDifferentTests.m; sourceTree = "<group>"; };
 		9A5BA1171A10B4DA00785778 /* judgeResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = judgeResultTests.m; sourceTree = "<group>"; };
+		9A66A16C1A149FD9008CB31D /* AsJudgeCountAndExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsJudgeCountAndExport.h; sourceTree = "<group>"; };
+		9A66A16D1A149FD9008CB31D /* AsJudgeCountAndExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsJudgeCountAndExport.m; sourceTree = "<group>"; };
+		9A66A16F1A14AD4B008CB31D /* judgeCountShowResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = judgeCountShowResult.m; sourceTree = "<group>"; };
 		9AA6C6751A130C2E00B74084 /* GameRuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRuleViewController.h; sourceTree = "<group>"; };
 		9AA6C6761A130C2E00B74084 /* GameRuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRuleViewController.m; sourceTree = "<group>"; };
 		9AA6C6791A131F1500B74084 /* AsJudgeResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsJudgeResult.h; sourceTree = "<group>"; };
@@ -167,8 +172,9 @@
 		9A5BA0F71A10990E00785778 /* NumberGameTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A5BA0FD1A10990E00785778 /* NumberGameTests.m */,
+				9A5BA0FD1A10990E00785778 /* judgeRandomNotNilAndDifferentTests.m */,
 				9A5BA1171A10B4DA00785778 /* judgeResultTests.m */,
+				9A66A16F1A14AD4B008CB31D /* judgeCountShowResult.m */,
 				9A5BA0F81A10990E00785778 /* Supporting Files */,
 			);
 			path = NumberGameTests;
@@ -190,6 +196,8 @@
 				9AA6C67A1A131F1500B74084 /* AsJudgeResult.m */,
 				9AA6C67C1A1320DA00B74084 /* AsGenerateRandom.h */,
 				9AA6C67D1A1320DA00B74084 /* AsGenerateRandom.m */,
+				9A66A16C1A149FD9008CB31D /* AsJudgeCountAndExport.h */,
+				9A66A16D1A149FD9008CB31D /* AsJudgeCountAndExport.m */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -293,6 +301,7 @@
 			files = (
 				9AA6C67B1A131F1500B74084 /* AsJudgeResult.m in Sources */,
 				9AA6C67E1A1320DA00B74084 /* AsGenerateRandom.m in Sources */,
+				9A66A16E1A149FD9008CB31D /* AsJudgeCountAndExport.m in Sources */,
 				9AA6C6771A130C2E00B74084 /* GameRuleViewController.m in Sources */,
 				9A5BA0E91A10990E00785778 /* ViewController.m in Sources */,
 				9A5BA0E31A10990D00785778 /* AppDelegate.m in Sources */,
@@ -304,7 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A5BA0FE1A10990E00785778 /* NumberGameTests.m in Sources */,
+				9A5BA0FE1A10990E00785778 /* judgeRandomNotNilAndDifferentTests.m in Sources */,
+				9A66A1701A14AD4C008CB31D /* judgeCountShowResult.m in Sources */,
 				9A5BA1181A10B4DB00785778 /* judgeResultTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,25 @@
 //
 
 #import "AsJudgeCountAndExport.h"
-
+#import "AsJudgeResult.h"
 @implementation AsJudgeCountAndExport
-
+-(NSString*)judgeCountExport :(NSString *)writetext :(NSString *)randomnumber :(int)inputcount
+{
+    NSString* showtext = [[NSString alloc]init];
+    AsJudgeResult *judgeResult = [[AsJudgeResult alloc]init:writetext :randomnumber];
+    NSString *showstring = [judgeResult judgeResultOut];
+    if (inputcount == 6) {
+        if (![showstring isEqualToString:@"4A0B"]) {
+            showtext = @"Failure";
+        }
+        else
+            showtext = @"Finish";
+    }
+    else if ([showstring isEqualToString:@"4A0B"]){
+        showtext = @"Finish";
+    }
+    else
+        showtext = showstring;
+    return showtext;
+}
 @end
