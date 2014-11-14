@@ -17,7 +17,6 @@
         NSString *randomString = [NSString stringWithFormat:@"%@",randomarray[index]];
         [randomnumber insertString:randomString atIndex:[randomnumber length]];
    }
-   
 return randomnumber;
 }
 -(NSMutableArray *)creatRandomArray :(int)randomMax

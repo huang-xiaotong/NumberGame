@@ -29,26 +29,26 @@
 - (void)test_input_count_is_6_and_showtext_is_4A0B
 {
     AsJudgeCountAndExport *judgeCount = [[AsJudgeCountAndExport alloc]init];
-    NSString *showtext = [judgeCount judgeCountExport:@"1234" :@"1234" :6];
+    NSString *showtext = [judgeCount judgeCountExport:@"4A0B" :6];
     XCTAssertEqualObjects(showtext, @"Finish");
 }
 -(void)test_input_count_is_6_but_showtext_is_not_4A0B
 {
     AsJudgeCountAndExport *judgeCount = [[AsJudgeCountAndExport alloc]init];
-    NSString *showtext = [judgeCount judgeCountExport:@"1234" :@"2456" :6];
+    NSString *showtext = [judgeCount judgeCountExport:@"3A0B" :6];
     XCTAssertEqualObjects(showtext, @"Failure");
 }
 -(void)test_input_count_is_5_but_showtext_is_4A0B
 {
     AsJudgeCountAndExport *judgeCount = [[AsJudgeCountAndExport alloc]init];
-    NSString *showtext = [judgeCount judgeCountExport:@"1234" :@"1234" :5];
+    NSString *showtext = [judgeCount judgeCountExport:@"4A0B" :5];
     NSLog(@"showtext:%@",showtext);
     XCTAssertEqualObjects(showtext, @"Finish");
 }
 -(void)test_input_count_is_5_and_showtext_is_2A2B
 {
     AsJudgeCountAndExport *judgeCount = [[AsJudgeCountAndExport alloc]init];
-    NSString *showtext = [judgeCount judgeCountExport:@"1234" :@"1243" :5];
+    NSString *showtext = [judgeCount judgeCountExport:@"2A2B" :5];
     NSLog(@"showtext:%@",showtext);
     XCTAssertEqualObjects(showtext, @"2A2B");
 }

@@ -18,21 +18,31 @@
     }
     return  self;
 }
+-(NSMutableArray *)WriteArray :(NSString *)writeString
+{
+    NSMutableArray *writeArray = [[NSMutableArray alloc]init];
+    for (int writeIndex = 0; writeIndex<[writeString length]; writeIndex++) {
+        NSString *data = [writeString substringWithRange:NSMakeRange(writeIndex, 1)];
+        [writeArray addObject:data];
+    }
+    return writeArray;
+}
+-(NSMutableArray *)RandomArray :(NSString *)randomString
+{
+    NSMutableArray *randomArray = [[NSMutableArray alloc]init];
+    for (int randomIndex = 0; randomIndex<[randomString length]; randomIndex++) {
+        NSString *data = [randomString substringWithRange:NSMakeRange(randomIndex, 1)];
+        [randomArray addObject:data];
+    }
+    return randomArray;
+}
 -(NSString *)judgeResultOut
 {
     int sameNumberSamePosition = 0;
     int sameNumberDifferentPosition = 0;
     int sameNumber = 0;
-    NSMutableArray *writearray = [[NSMutableArray alloc]init];
-    for (int writeIndex = 0; writeIndex<[getWriteString length]; writeIndex++) {
-        NSString *data = [getWriteString substringWithRange:NSMakeRange(writeIndex, 1)];
-        [writearray addObject:data];
-    }
-    NSMutableArray *getRandomArray = [[NSMutableArray alloc]init];
-    for (int randomIndex = 0; randomIndex<[getRandomString length]; randomIndex++) {
-        NSString *data = [getRandomString substringWithRange:NSMakeRange(randomIndex, 1)];
-        [getRandomArray addObject:data];
-    }
+    NSMutableArray *writearray = [self WriteArray :getWriteString];
+    NSMutableArray *getRandomArray = [self RandomArray:getRandomString];
     for (int i = 0; i<[writearray count]; i++) {
         for (int j = 0; j<[getRandomArray count]; j++) {
             if ([writearray[i] isEqualToString:getRandomArray[j]]) {

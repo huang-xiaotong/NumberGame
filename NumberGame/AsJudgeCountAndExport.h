@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface AsJudgeCountAndExport : NSObject
--(NSString*)judgeCountExport :(NSString *)writetext :(NSString *)randomnumber :(int)inputcount;
+-(NSString*)judgeCountExport :(NSString *)showString :(int)inputcount;
 @end

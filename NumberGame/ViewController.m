@@ -69,9 +69,11 @@
         inputCount++;
         NSLog(@"inputcount%d",inputCount);
     }
+    AsJudgeResult *judgeResult = [[AsJudgeResult alloc]init:writeText.text :randomNumber];
+    NSString *showstring = [judgeResult judgeResultOut];
     AsJudgeCountAndExport *judgecount = [[AsJudgeCountAndExport alloc]init];
     AsGenerateRandom *generateRandom = [[AsGenerateRandom alloc]init];
-    NSString *showtext = [judgecount judgeCountExport:writeText.text :randomNumber :inputCount];
+    NSString *showtext = [judgecount judgeCountExport:showstring :inputCount];
     showText.text = showtext;
     if ([showtext isEqualToString:@"Failure"] | [showtext isEqualToString:@"Finish"]) {
         randomNumber = [generateRandom randomNumber:10];
